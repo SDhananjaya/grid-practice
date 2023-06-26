@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gride practice</title>
+        <style>
+            .total-div{
+                display: grid;
+                height: 96vh;
+                grid-template-columns: 25% 25% 25% 25%;
+                grid-template-rows: 15% 25% 40% 15% ;
+                column-gap: 10px;
+                row-gap: 10px;
+            }
+            .header{
+              background-color: brown;
+              grid-column:1/5;
+            }
+            .small-box1{
+              background-color: blueviolet;
+              grid-column: 1/2;
+            }
+            .small-box2{
+                background-color: rgb(7, 155, 51);
+                grid-column: 2/3;
+
+            }
+            .small-box3{
+                background-color: blueviolet;
+                grid-column: 3/4;
+
+            }
+            .sidebar{
+                background-color:rgb(203, 10, 148);
+                grid-column: 4/5;
+                grid-row:2/4;
+
+            }
+            .main-content{
+                background-color:rgb(10, 177, 232);
+                grid-column: 1/4;
+                grid-row:3/4;
+            }
+            .footer{
+                background-color: brown;
+                grid-column:1/5;
+            }
+            .total-div >div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="total-div">
+            <div class="header">Header</div>
+            <div class="small-box1">small Box</div>
+            <div class="small-box2">small Box</div>
+            <div class="small-box3">small Box</div>
+            <div class="sidebar">side Bar</div>
+            <div class="main-content">main Content</div>
+            <div class="footer">Footer</div>
+        </div>
+    </body>
+</html>
